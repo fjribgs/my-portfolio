@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import laios from '../assets/laios.jpeg'
-import laiosbg from '../assets/laios-bg.svg'
 import '../index.css'
 
 function Hero() {
@@ -38,7 +37,7 @@ function Hero() {
 
         <div id="button"
         className='flex'>
-          <a id="my-resume" className='border-2 py-3 px-5 mt-5 ml-2 rounded-3xl 
+          <a id="my-resume" className='border-2 py-2.5 px-5 mt-5 rounded-3xl 
           bg-[var(--primary3)] border-[var(--primary3)] text-[var(--primary1)]
           hover:bg-[var(--primary5)] duration-150 ease-in' 
           href='https://drive.google.com/file/d/1GMHL85_DdeYcSu6EDcPyoh2hj1n4u7Dp/view?usp=sharing'
@@ -46,14 +45,10 @@ function Hero() {
         </div>
       </div>
 
-      <div id="hero-right" className="size-130 hidden sm:hidden ml-10 items-center
-      z-10">
-        <img src={laios} alt="laios" className='rounded-3xl mb-7 
-        hidden sm:block'/>
+      <div id="hero-right" className="size-130 sm:block ml-10 items-center
+      z-10 hidden">
+        <img src={laios} alt="laios" className='rounded-3xl hidden mb-7 sm:block'/>
       </div>
-
-      <img src={laiosbg} alt="laiosbg" className='absolute ml-30 h-254 hidden
-      sm:block'/>
     </div>
   )
 }
